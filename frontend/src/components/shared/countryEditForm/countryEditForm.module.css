@@ -1,0 +1,12 @@
+.edit_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .edit_form {
+        grid-template-columns: 1fr;
+    }
+}

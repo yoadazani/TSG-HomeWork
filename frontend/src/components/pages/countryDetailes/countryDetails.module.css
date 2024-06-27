@@ -1,0 +1,116 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f6f9fc 0%, #e6ecf5 100%);
+}
+
+.country_details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.country_name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #1a237e;
+    margin: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content_wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.flag_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f1f8ff 0%, #e7f0fd 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.flag_container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+            from 0deg,
+            transparent 0deg 340deg,
+            rgba(255, 255, 255, 0.2) 360deg
+    );
+    animation: rotate 10s linear infinite;
+}
+
+.flag {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.info_and_edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.country_details {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .country_details {
+        padding: 1.5rem;
+    }
+
+    .content_wrapper {
+        flex-direction: column;
+    }
+
+    .flag_container, .info_and_edit {
+        flex: none;
+        width: 100%;
+    }
+}
