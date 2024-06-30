@@ -7,6 +7,7 @@
     <list default="true" id="d66cd823-79f2-4529-b87d-80a50370393e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1719478631" />
+                    <option name="lastUsedInstant" value="1719479473" />
                   </RecentBranch>
                 </list>
               </option>
@@ -75,7 +76,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/TSG HomeWork/frontend",
     "list.type.of.created.stylesheet": "CSS",
@@ -117,7 +118,7 @@
       <updated>1719399865624</updated>
       <workItem from="1719399868726" duration="789000" />
       <workItem from="1719411057150" duration="33624000" />
-      <workItem from="1719474236607" duration="4469000" />
+      <workItem from="1719474236607" duration="5677000" />
     </task>
     <servers />
   </component>
